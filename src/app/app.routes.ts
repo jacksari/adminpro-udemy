@@ -7,8 +7,8 @@ import { RegisterComponent } from './login/register.component';
 
 const routes: Routes = [
 
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent, data: { titulo: 'Login' } },
+  { path: 'register', component: RegisterComponent, data: { titulo: 'Registrar' } },
 
 
   { path: '**', component: NopagefoundComponent },
